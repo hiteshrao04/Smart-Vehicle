@@ -61,11 +61,11 @@ To verify if Python 3.11 has been installed correctly on your system, follow the
 
 2. **Clone the repository**:
    ```bash
-   git clone https://github.com/HITESHRAO2004/AI-Car-Maintenance.git
+   git clone https://github.com/hiteshrao04/Smart-Vehicle.git
 
 3. **Navigate into the project directory**:
    ```bash
-   cd AI-Car-Maintenance
+   cd Smart-Vehicle
 
 4. **Install Python dependencies**:
    ```bash
@@ -78,7 +78,7 @@ To verify if Python 3.11 has been installed correctly on your system, follow the
 6. **When API Start Running on 'http://127.0.0.1:5000' and start showing 'Vehicle RUL Prediction API is live!'** then Open new Command Prompt (press Win + R, type cmd, and press Enter) and 
    Naviagate into the project directory again:
    ```bash
-   cd AI-Car-Maintenance
+   cd Smart-Vehicle
 
 7. **Install project dependencies**:
    ```bash
