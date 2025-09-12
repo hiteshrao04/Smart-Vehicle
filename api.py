@@ -6,12 +6,12 @@ from flask_cors import CORS
 from pytz import timezone
 
 # Load the trained RUL prediction model
-with open("AIML Models/trained_model.pkl", "rb") as f:  
+with open("AIML Models/LGBMRegressorForRULPrediction.pkl", "rb") as f:  
     print("Loading RUL model...")
     rul_model = pickle.load(f)
 
 # Load the failure classification model
-with open("AIML Models/Failure_Prediction_Classifier.pkl", "rb") as f:
+with open("AIML Models/LGBMClassifierForFailurePrediction.pkl", "rb") as f:
     print("Loading Failure Classification model...")
     failure_model = pickle.load(f)
 
