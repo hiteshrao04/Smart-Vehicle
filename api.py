@@ -60,10 +60,16 @@ def predict():
         rul_predictions = rul_model.predict(preprocessed_data)
         rul_brake, rul_battery, rul_oil, rul_tire = map(float, rul_predictions[0])  # Ensure float format
 
+        # Print the RUL predictions for debugging
+        print(f"RUL Predictions - Brake: {rul_brake}, Battery: {rul_battery}, Oil: {rul_oil}, Tire: {rul_tire}")
+
         # Make predictions using the failure classification model
         failure_predictions = failure_model.predict(preprocessed_data)
         Brake_pad_failure, Engine_oil_Failure, Battery_Failure, Tire_Failure = map(int, failure_predictions[0])  # Ensure integer format
-        
+
+        # Print the failure classification predictions for debugging
+        print(f"Failure Predictions - Brake pad: {Brake_pad_failure}, Engine oil: {Engine_oil_Failure}, "
+              f"Battery: {Battery_Failure}, Tire: {Tire_Failure}")
 
         # Get the current timestamp in IST
         ist = timezone('Asia/Kolkata')
