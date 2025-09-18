@@ -73,7 +73,7 @@ To verify if Python 3.11 has been installed correctly on your system, follow the
 
 5. **Start the Flask API and wait for some time**:
    ```bash
-   api.py
+   python api.py
 
 6. **When API Start Running on 'http://127.0.0.1:5000' and start showing 'Vehicle RUL Prediction API is live!'** then Open new Command Prompt (press Win + R, type cmd, and press Enter) and 
    Naviagate into the project directory again:
